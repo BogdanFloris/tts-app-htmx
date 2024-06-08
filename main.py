@@ -51,7 +51,7 @@ async def generate(request: Request, text: Annotated[str, Form()]):
     session_key = request.cookies.get("session_key", uuid.uuid4().hex)
     response = client.audio.speech.create(
         model="tts-1",
-        voice="nova",
+        voice="alloy",
         input=text,
     )
     speech_file_path = get_speech_file_path()
