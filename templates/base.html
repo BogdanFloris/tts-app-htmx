@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+
+    <!-- Htmx -->
+    <script src="https://unpkg.com/htmx.org@1.9.12"
+        integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+        crossorigin="anonymous"></script>
+
+    {% block style %} {% endblock %}
+</head>
+
+<body>
+    <div>{% block content %} {% endblock %}</div>
+
+    {% block javascript %} {% endblock %}
+</body>
+
+</html>

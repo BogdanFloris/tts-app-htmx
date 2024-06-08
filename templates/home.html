@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block style %}<style></style>{% endblock %}
+{% block content %}
+<div>
+  <form hx-post="/generate">
+    <label for="text">Enter text:</label>
+    <input type="text" id="text" name="text" required>
+    <button type="submit">Generate audio</button>
+  </form>
+  <div hx-target="#audio" hx-swap="outerHTML"></div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script></script>{% endblock %}

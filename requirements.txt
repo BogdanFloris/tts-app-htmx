@@ -1,0 +1,14 @@
+fastapi
+aiofiles
+click
+Jinja2
+h11
+MarkupSafe
+pydantic
+python-multipart
+six
+uvicorn
+mypy
+sqlalchemy-stubs
+typing-extensions
+openai
